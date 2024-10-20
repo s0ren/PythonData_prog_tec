@@ -1,0 +1,25 @@
+---
+title: PlantUML diagram
+author: Tester McTestface
+filters:
+  - diagram
+format:
+  html:
+    filters:
+      - '../diagram.lua'
+diagram:
+  cache: false
+---
+_Kilde: <https://github.com/pandoc-ext/diagram/blob/main/test/plantuml-quarto.qmd>_
+
+Diagram:
+
+```{.plantuml caption="This is an image, created by **PlantUML**." width=50%}
+'| label: fig-auth
+'| class: important
+'| filename: auth
+@startuml
+Alice -> Bob: Authentication Request Bob --> Alice: Authentication Response
+Alice -> Bob: Another authentication Request Alice <-- Bob: another Response
+@enduml
+```

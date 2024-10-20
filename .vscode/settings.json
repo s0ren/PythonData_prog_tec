@@ -1,0 +1,19 @@
+{
+    "cSpell.language": "en,da,da-DK",
+    "cSpell.enableFiletypes": [
+        "markdown_latex_combined",
+        "md",
+        "qmd"
+    ],
+    "spellright.language": [
+        "da",
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "quarto.render.renderOnSave": true,
+
+}

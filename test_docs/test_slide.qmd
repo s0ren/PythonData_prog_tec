@@ -1,0 +1,82 @@
+---
+title: "Demo"
+format: revealjs
+filters:
+  - diagram
+diagram:
+  cache: false
+---
+
+Hej Mor
+
+::: {.callout-important appearance="minimal"}
+## gør det nu
+
+Ja gør så
+:::
+
+# Dyr
+
+På vore planet har vi en masse dyr, planter og andre livsformer.
+
+Andre livsformer kan være svampe, virus og bakterier.
+
+Planter ... er ikke dyr, svampe er hverken dyr eller planter...
+
+## Patterdyr
+
+### hest
+
+### hund
+
+### kat
+
+# Hvad planeten kan
+
+Planeten kan opfattes som en sfære med størrelsen s:
+
+$$
+s=d^3
+$$
+
+```python
+s = d**3
+```
+
+## PlantUML
+
+```{.plantuml caption="This is an image, created by **PlantUML**." width=50%}
+
+@startuml
+left to right direction
+actor Guest as g
+package Professional {
+  actor Chef as c
+  actor "Food Critic" as fc
+}
+package Restaurant {
+  usecase "Eat Food" as UC1
+  usecase "Pay for Food" as UC2
+  usecase "Drink" as UC3
+  usecase "Review" as UC4
+  usecase "Hest" as hest
+}
+fc --> UC4
+g --> UC1
+g --> UC2
+g --> UC3
+UC3 --> hest
+
+@enduml
+```
+
+## Mermaid
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two] --> hest(blå)
+```
+

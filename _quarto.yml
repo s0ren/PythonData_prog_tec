@@ -1,0 +1,22 @@
+project:
+  title: "Default demo"
+  output-dir: out
+  execute-dir: project  
+  render: 
+    - "*.qmd"
+    - "readme.md"
+  
+toc: true
+number-sections: true
+
+filters:
+  - diagram
+diagram:
+  cache: false
+
+format: 
+  html:
+    code-fold: true
+  typst:
+    pagesize: a4
+

@@ -1,0 +1,60 @@
+---
+# lang: en
+# # language: en
+# lc_all: en
+title: PlantUML diagram, som jeg selv har lavet
+author: Søren Magnusson
+filters:
+  - diagram
+diagram:
+  cache: false
+# format:
+  # html:
+    # filters:
+    #   - '../diagram.lua'
+---
+
+# Her noget med diagrammer
+
+Kør render med pdf:
+
+  quarto render demo_m_grafer.qmd --to pdf
+
+## PlantUML
+
+```{.plantuml caption="This is an image, created by **PlantUML**." width=50%}
+
+@startuml
+left to right direction
+actor Guest as g
+package Professional {
+  actor Chef as c
+  actor "Food Critic" as fc
+}
+package Restaurant {
+  usecase "Eat Food" as UC1
+  usecase "Pay for Food" as UC2
+  usecase "Drink" as UC3
+  usecase "Review" as UC4
+  usecase "Hest" as hest
+}
+fc --> UC4
+g --> UC1
+g --> UC2
+g --> UC3
+UC3 --> hest
+
+@enduml
+```
+
+## Mermaid
+
+```{mermaid caption="This is an image, created by **Mermaid**." width=75%}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two] --> hest(blå)
+```
+
+## Andet?
